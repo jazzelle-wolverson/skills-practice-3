@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    text-decoration: none;
+    list-style-type: none;
+
 }
 
 .container {
@@ -9,22 +13,15 @@
 }
 .col {
     flex: 1;
-    /* justify-content: space-between; */
     margin: auto;
-    /* border: solid black 3px; */
-
+    display: flex;
 }
 
 .logo {
     width: 30%;
 }
 
-.horizontal {
-    /* flex-direction: column; */
-}
-
 .headerLink {
-    text-decoration: none;
     color: black;
     padding: 1%;
     font-size: 150%;
@@ -33,7 +30,6 @@
 }
 
 li {
-    list-style-type: none;
     padding: 1%;
 }
 
@@ -45,11 +41,33 @@ li {
     border-bottom: solid black 2px;
 }
 
-.social {
-    text-align: right;
-    padding: 1%;
+header {
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
+.social {
+    text-align: right;
+    /* padding: 1%; */
+    /* margin: auto; */
+    justify-content: end;
+}
+
+.test {
+    padding: 10px;
+    height: 54px;
+
+}
 .facebook {
-    width: 5%;
+    max-width: auto;
+    max-height: 54PX;
+}
+
+.button {
+    background-color: rgb(21, 78, 131);
+    padding: 10px;
+    border: solid black 3px;
+    border-radius: 7px;
+    font-size: 150%;
+    color: white;
 }
