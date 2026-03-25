@@ -4,7 +4,7 @@
     font-size: 100%;
     text-decoration: none;
     list-style-type: none;
-
+    margin: 0;
 }
 
 .container {
@@ -13,8 +13,27 @@
 }
 .col {
     flex: 1;
-    margin: auto;
+    margin: 10px;
     display: flex;
+}
+
+.outerRow {
+    width:100%;
+    padding: 100px;
+    background-color: antiquewhite;
+    /* margin: auto; */
+}
+
+.innerRow {
+    /* max-width: 100%; */
+    max-width: 50%;
+    margin:  0 auto;
+    display: flex;
+}
+
+h1 {
+    margin: 25px auto;
+    font-size: 3em;
 }
 
 .logo {
@@ -53,6 +72,10 @@ header {
     justify-content: end;
 }
 
+p {
+    font-size: 1.15em;
+}
+
 .test {
     padding: 10px;
     height: 54px;
@@ -61,6 +84,10 @@ header {
 .facebook {
     max-width: auto;
     max-height: 54PX;
+}
+
+img {
+    width: 100%;
 }
 
 .button {
