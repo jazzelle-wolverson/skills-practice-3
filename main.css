@@ -159,7 +159,7 @@ form {
 
 @media (max-width: 900px){
     * {
-        width: 100%;
+        /* width: 100%; */
     }
     .innerRow, .outerRow{
         flex-direction: column;
@@ -167,6 +167,9 @@ form {
         /* max-width: 0%; */
         /* padding: 0; */
         /* margin: auto; */
+    }
+    .headerLink {
+        /* display: flex; */
     }
     h2 {
         text-align: none;
