@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+    font-size: 1em;
     text-decoration: none;
     list-style-type: none;
     margin: 0;
@@ -14,13 +14,20 @@
 .col {
     flex: 1;
     margin: 10px;
-    display: flex;
+    /* display: flex; */
     /* border: solid black 3px; */
 }
 
 .outerRow {
     width:100%;
     padding: 100px;
+    
+}
+
+.innerRow {
+    max-width: 50%;
+    margin:  0 auto;
+    display: flex;
 }
 
 .tan {
@@ -35,30 +42,27 @@
     background-color: #464141;
 }
 
-.innerRow {
-    max-width: 50%;
-    margin:  0 auto;
-    display: flex;
-}
+
 
 h1{
     margin: 10px auto;
     font-size: 3em;
-}
-h2 {
-    margin: 25px auto;
-
-    font-size: 40px;
     text-align: center;
 }
+h2 {
+    margin: auto;
+
+    font-size: 2em;
+    /* text-align: center; */
+}
 .logo {
-    width: 30%;
+    height: 100px;
 }
 
 .headerLink {
     color: black;
     padding: 1%;
-    font-size: 150%;
+    font-size: 2em;
     align-items: center;
 }
 
@@ -80,7 +84,7 @@ header {
 
 .dot {
     list-style-type: circle;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 
@@ -98,7 +102,7 @@ header {
 }
 
 p {
-    font-size: 19px;
+    font-size: 1.2em;
     margin: 10px 0 10px 0;
     line-height: 27px;
 }
@@ -114,8 +118,9 @@ p {
 }
 
 img {
-    height: 300px;
-    margin: auto;
+    /* height: 500px; */
+    /* margin: auto; */
+    max-width: 100%;
 }
 
 .button {
@@ -123,7 +128,7 @@ img {
     padding: 10px;
     border: solid black 3px;
     border-radius: 7px;
-    font-size: 150%;
+    font-size: 2em;
     color: white;
 }
 
@@ -151,16 +156,31 @@ form {
     border-radius: 7px;
 }
 
-@media (max-width: 600px){
-    *{
+@media (max-width: 900px){
+    * {
+        width: 100%;
+    }
+    .innerRow, .outerRow{
         flex-direction: column;
-        padding: 0;
-        /* margin: 0; */
+        /* width: 100%; */
+        /* max-width: 0%; */
+        /* padding: 0; */
+        /* margin: auto; */
+    }
+    h2 {
+        text-align: none;
     }
     .innerRow{
         padding: 0;
-        margin: 0;
-        display: block;
-        flex-direction: column;
+        /* margin: 0; */
+        /* display: block; */
+        /* flex-direction: column; */
+    }
+    img {
+        height: 225px;
+        margin: auto;
+    }
+    .outerRow {
+        padding: 10px;
     }
 }
