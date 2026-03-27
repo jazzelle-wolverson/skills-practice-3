@@ -131,6 +131,26 @@ img {
     flex-direction: column;
 }
 
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 10px;
+}
+input[type=submit] {
+    background-color: rgb(14, 199, 199);
+}
+
+input[type=submit]:hover {
+    background-color: rgb(42, 170, 170);
+}
+
+form {
+    padding: 10px;
+    background-color: white;
+    border:#464141 solid 3px;
+    border-radius: 7px;
+}
+
 @media (max-width: 600px){
     *{
         flex-direction: column;
