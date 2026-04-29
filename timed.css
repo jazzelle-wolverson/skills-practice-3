@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.col {
+  flex: 1;
+}
+
+.innerRow {
+  display: flex;
+  padding: 100px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.outerRow {
+  background-color: red;
+  width: 100%;
+}
+
+.noDecoration,
+ul {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+footer {
+  margin: auto;
+}

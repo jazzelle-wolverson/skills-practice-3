@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Contact | The Wish Project</title>
+    <link href="other.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/TheWishProjectLogo.png" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a class="noDecoration underline" href="timedHome.html">Home</a>
+            <a class="noDecoration underline" href="timedAbout.html">About</a>
+            <a class="noDecoration underline" href="timedStory.html">Our Story</a>
+            <a class="noDecoration underline" href="timedThrift.html">Thrift</a>
+            <a class="noDecoration underline" href="timedVolunteer.html">Volunteer</a>
+            <a class="noDecoration underline" href="timedContact.html">Contact</a>
+            <button href="timedDonate.html">DONATE</a>
+        </nav>        
+    </header>
+    <main>
+            <div class="innerRow">
+                <div class="col">
+                    <form method="post">
+                        <label for="name" required>Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter name"/>                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject">
+                            <option value="general">General</option>
+                            <option value="volunteer">Volunteer</option>
+                            <option value="projects">Projects</option>
+                            <option value="donation">Donation</option>
+                        </select>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"/>
+                        <label for="message">Message:</label>
+                        <input type="text" id="message" name="message" required placeholder="Enter message"/>                    
+                        <input type="submit" value="Submit" id="submit"/>
+                    </form>
+                </div>
+            </div>
+            <div class="outerRow">
+        <div class="innerRow">
+            <div class="col">
+                <h2>Hours</h2>
+                <p>Our warehouse is open from 9:00 – 3:00 Tuesday – Saturday</p>
+
+                <h2>Phone Number</h2>
+                <p>866-947-4360</p>
+            </div>
+            <div class="col">
+                <h2>Physical Address</h2>
+                <p>166 Middlesex St
+                    North Chelmsford, MA 01863
+                    (Behind Hertz Rental and next to Welch’s Welding)
+                </p>
+                <h2>Mailing Address</h2>
+                <p>PO Box 8693 Lowell, MA 01853</p>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
